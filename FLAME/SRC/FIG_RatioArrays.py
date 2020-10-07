@@ -13,7 +13,7 @@ def FIG_ratio_arrays(sat_array, field_array, output, field_data, fignum):
     newarr = newarr.reset_index('time', drop=True)
 
     #fig_title = 'Figure '+str(fignum)+': '+field_data[0]+' '+field_data[1]+' '+field_data[2]+' '+field_data[3]
-    fig, axes = plt.subplots(nrows=4, ncols=3, figsize=(11.5, 9.5))
+    fig, axes = plt.subplots(nrows=4, ncols=3, figsize=(13, 11))
     #fig.suptitle(fig_title+': Ratio of satellite/field reflectance', fontweight='bold')
     plt.tight_layout(pad=3.5, w_pad=4.5, h_pad=1.5)
 
@@ -49,5 +49,9 @@ def FIG_ratio_arrays(sat_array, field_array, output, field_data, fignum):
 
     else:
         print('Satellite name should be one of Landsat8 or Sentinel2a/b. I got', field_data[3])
+
+    for i in range(4):
+        for j in range(3):
+            axes[i,j].set_title('')
 
     plt.savefig(output+field_data[0]+'_'+field_data[1]+'_'+field_data[2]+'_'+field_data[3]+'_'+'Fig'+str(fignum)+'_RatioSatOverFieldData.png')

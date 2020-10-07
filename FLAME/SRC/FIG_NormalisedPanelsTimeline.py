@@ -54,7 +54,7 @@ def FIG_normalised_panels_timeline(gpta, output, field_data, fignum):
 
     gpta.plot.scatter(x='Time', y='Averaged_Panels', title='All Panels', color='black', ax=axes)
     gpta.plot.line(x='Time', y='Averaged_Panels', ax=axes, style='b', legend=False)
-    axes.set_ylabel("Average Panel Radiance")
+    axes.set_ylabel("Average Panel Radiance (W m$^{-2}$ nm$^{-1}$ sr$^{-1}$)")
     axes.set_xlabel("Time (seconds)")
 
     plt.savefig(output+field_data[0]+'_'+field_data[1]+'_'+field_data[2]+'_'+field_data[3]+'_'+'Fig'+str(fignum)+'_TimevsAvgPanels.png')

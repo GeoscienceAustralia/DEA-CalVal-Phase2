@@ -18,6 +18,8 @@ def FIG_panel_radiances(all_panel_spec, output, field_data, fignum):
     # Plot the ALL panel radiances
     #
     all_panel_spec.plot(title = " All panel radiances", legend=False, ax=axes)
+    axes.set_xlabel('Wavelength (nm)')
+    axes.set_ylabel('Radiance (W m$^{-2}$ nm$^{-1}$ sr$^{-1}$)')
 
     #
     # Save plot to output directory.

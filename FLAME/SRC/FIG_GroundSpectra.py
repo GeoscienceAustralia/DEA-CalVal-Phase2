@@ -20,5 +20,7 @@ def FIG_ground_spectra(all_grounds_spec, output, field_data, fignum):
         plt.tight_layout(pad=5.5, w_pad=1.0, h_pad=1.0)
 
         all_grounds_spec.plot(title="All ground radiances", legend=False, ax=axes)
+        axes.set_xlabel('Wavelength (nm)')
+        axes.set_ylabel('Radiance (W m$^{-2}$ nm$^{-1}$ sr$^{-1}$)')
 
         plt.savefig(output+field_data[0]+'_'+field_data[1]+'_'+field_data[2]+'_'+field_data[3]+'_'+'Fig'+str(fignum)+'_GroundRadiances.png')

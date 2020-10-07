@@ -16,14 +16,14 @@ def FIG_reflectances(good_panels, all_refls, colpac, output, field_data, fignum)
 
     fig_title = 'Figure '+str(fignum)+': '+field_data[0]+' '+field_data[1]+' '+field_data[2]+' '+field_data[3]
     fig, axy = plt.subplots(nrows=1, ncols=2, figsize=(13.5, 5.5))
-    fig.suptitle(fig_title+': Ground Reflectances.\nBlack: Individual reflectances. Colour: Average Reflectances for each line', fontweight='bold')
+    fig.suptitle(fig_title+': Ground Surface Reflectances.\nBlack: Individual surface reflectances. Colour: Average surface reflectances for each line', fontweight='bold')
     plt.tight_layout(pad=3.5, w_pad=1.0, h_pad=1.0)
 
     maska = all_refls[np.logical_xor(all_refls.index > 1350, all_refls.index < 1480)]
     maskb = maska[np.logical_xor(maska.index > 1801, maska.index < 1966)]
     all_refls_masked = maskb[(maskb.index < 2350)]
 
-    axy[0].set_ylabel("Reflectance")
+    axy[0].set_ylabel("Surface Reflectance")
     axy[1].set_ylim(all_refls_masked.min().min()*0.95, all_refls_masked.max().max()*1.05)
 
     all_refls.plot(legend=False, ax=axy[0], color='k')
@@ -42,6 +42,8 @@ def FIG_reflectances(good_panels, all_refls, colpac, output, field_data, fignum)
     #    else:
     #        alllines = pd.concat([alllines, line.to_frame()], axis=1)
     #alllines.columns = good_panels.Line.unique()
+    axy[0].set_xlabel("Wavelength (nm)")
+    axy[1].set_xlabel("Wavelength (nm)")
 
     plt.savefig(output+field_data[0]+'_'+field_data[1]+'_'+field_data[2]+'_'+field_data[3]+'_'+'Fig'+str(fignum)+'_Reflectances.png')
     

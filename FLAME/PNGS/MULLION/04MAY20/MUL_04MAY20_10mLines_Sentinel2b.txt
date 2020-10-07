@@ -19,11 +19,11 @@ Solar Zenith angle is from 57.9 to 57.3 degrees.
 Data were read in from ../MULLION/04MAY20/flame_data/10m_lines/
 PNGs were written to ../PNGS/MULLION/04MAY20/
 
-Panel is assumed to be GA_Panel
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
 Data is assumed to be recorded in Radiance mode.
 
 Satellite processing and historical data can be found using the following dataset ID and location:
-[Dataset <id=f534ad52-61f9-446b-978d-4cd6fd083b53 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-17/S2B_OPER_MSI_ARD_TL_EPAE_20200517T012149_A016687_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=ce95dcdb-416c-4cfa-b685-3d2b4e4d1b44 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-04-27/S2B_OPER_MSI_ARD_TL_EPAE_20200427T013001_A016401_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=bcfb0910-4805-48ea-8b99-7e72f3d16da2 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-04-24/S2B_OPER_MSI_ARD_TL_SGS__20200424T012031_A016358_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=08d18858-920a-4085-9526-435d4d5f1efc product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-04/S2B_OPER_MSI_ARD_TL_EPAE_20200504T012113_A016501_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=768217fc-9392-49af-a714-dbe7df588758 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-07/S2B_OPER_MSI_ARD_TL_EPAE_20200507T012811_A016544_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=5f6da227-7875-4218-acfb-715145e77b56 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-14/S2B_OPER_MSI_ARD_TL_EPAE_20200514T012131_A016644_T55HFB_N02.09/ARD-METADATA.yaml>]
+[Dataset <id=bcfb0910-4805-48ea-8b99-7e72f3d16da2 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-04-24/S2B_OPER_MSI_ARD_TL_SGS__20200424T012031_A016358_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=08d18858-920a-4085-9526-435d4d5f1efc product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-04/S2B_OPER_MSI_ARD_TL_EPAE_20200504T012113_A016501_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=f534ad52-61f9-446b-978d-4cd6fd083b53 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-17/S2B_OPER_MSI_ARD_TL_EPAE_20200517T012149_A016687_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=5f6da227-7875-4218-acfb-715145e77b56 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-14/S2B_OPER_MSI_ARD_TL_EPAE_20200514T012131_A016644_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=768217fc-9392-49af-a714-dbe7df588758 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-05-07/S2B_OPER_MSI_ARD_TL_EPAE_20200507T012811_A016544_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=ce95dcdb-416c-4cfa-b685-3d2b4e4d1b44 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-04-27/S2B_OPER_MSI_ARD_TL_EPAE_20200427T013001_A016401_T55HFB_N02.09/ARD-METADATA.yaml>]
 
 Summary Statistics over entire field site:
 ------------------------------------------
@@ -31,14 +31,14 @@ Summary Statistics over entire field site:
 Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
          mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
                                          (%)     (%)            rms (%)
-CA	0.0207	0.000953	0.0208	0.00355	4.61	17	0.992	3.88
-blue	0.0272	0.00253	0.0266	0.00439	9.31	16.5	1.02	9.59
-green	0.0627	0.00254	0.0641	0.00396	4.05	6.17	0.978	3.84
-red	0.0312	0.00494	0.028	0.00907	15.8	32.4	1.12	16.5
-RE1	0.107	0.00412	0.103	0.0085	3.86	8.26	1.04	3.88
-RE2	0.365	0.0209	0.359	0.0423	5.72	11.8	1.02	5.64
-RE3	0.419	0.0288	0.429	0.0608	6.87	14.2	0.977	6.7
-nir_1	0.445	0.0364	0.443	0.0612	8.18	13.8	1.01	8.03
-nir_2	0.461	0.031	0.453	0.0614	6.74	13.6	1.02	6.47
-swir_2	0.193	0.00698	0.455	0.0598	3.62	13.1	0.424	3.34
-swir_3	0.0847	0.00535	0.459	0.0603	6.32	13.2	0.184	6.12
+CA	0.0207	0.000953	0.0216	0.00368	4.61	17	0.955	3.88
+blue	0.0272	0.00253	0.0276	0.00456	9.31	16.5	0.984	9.59
+green	0.0627	0.00254	0.0665	0.0041	4.05	6.17	0.943	3.84
+red	0.0312	0.00494	0.0291	0.00942	15.8	32.4	1.08	16.5
+RE1	0.107	0.00412	0.107	0.00883	3.86	8.26	0.999	3.88
+RE2	0.365	0.0209	0.373	0.044	5.72	11.8	0.978	5.64
+RE3	0.419	0.0288	0.447	0.0633	6.87	14.2	0.939	6.7
+nir_1	0.445	0.0364	0.462	0.0638	8.18	13.8	0.965	8.03
+nir_2	0.461	0.031	0.472	0.064	6.74	13.6	0.976	6.47
+swir_2	0.193	0.00698	0.474	0.0624	3.62	13.1	0.407	3.34
+swir_3	0.0847	0.00535	0.479	0.063	6.32	13.2	0.177	6.12
