@@ -1,0 +1,44 @@
+DATA SHEET FOR MUL taken on 11SEP20,  Sentinel2b overpass
+------------------------------------------------------------------
+
+Time of field site measurements is from 00:17:36 to 00:54:30 on the 11 September, 2020 (UTC)
+Satellite overpass was at 2020-09-01T00:02:49.024000000 (UTC)
+
+Difference in time between start of field site measurement
+and satellite overpass is -11 days +23:45:13.024000
+
+Good GPS Coordinates were found in the headers
+Approximate bounding box coordinates:
+NW: (148.86256, -35.12211)
+
+NE: (148.863867, -35.12211)
+SW: (148.86256, -35.123185)
+SE: (148.863867, -35.123185)
+Solar Zenith angle is from 46.5 to 42.6 degrees.
+
+Data were read in from RAW_DATA/ASD_DATA/
+PNGs were written to ../PNGS/TMP/
+
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
+Data is assumed to be recorded in Radiance mode.
+
+Satellite processing and historical data can be found using the following dataset ID and location:
+[Dataset <id=02c1caba-375b-4957-9a33-6b50148dc053 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-09-01/S2B_OPER_MSI_ARD_TL_EPAE_20200901T011739_A018217_T55HFB_N02.09/ARD-METADATA.yaml>]
+
+Summary Statistics over entire field site:
+------------------------------------------
+
+Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
+         mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
+                                         (%)     (%)            rms (%)
+CA	0.0642	0.00232	0.0152	0.00302	3.62	20	4.23	2.66
+blue	0.0649	0.00388	0.0202	0.00404	5.98	20	3.21	4.98
+green	0.0886	0.00272	0.0516	0.00731	3.07	14.2	1.72	2.69
+red	0.0678	0.00395	0.0221	0.00701	5.82	31.7	3.06	5.69
+RE1	0.128	0.00366	0.0865	0.0119	2.85	13.7	1.48	2.88
+RE2	0.351	0.0142	0.355	0.0505	4.05	14.2	0.989	3.07
+RE3	0.41	0.0198	0.458	0.0725	4.82	15.8	0.895	3.87
+nir_1	0.443	0.0228	0.486	0.0718	5.16	14.8	0.912	4.21
+nir_2	0.461	0.0194	0.501	0.0716	4.21	14.3	0.919	3.43
+swir_2	0.204	0.00391	0.173	0.0202	1.92	11.6	1.17	1.37
+swir_3	0.102	0.00354	0.0712	0.01	3.46	14	1.44	2.17
