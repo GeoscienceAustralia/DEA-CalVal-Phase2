@@ -9,7 +9,6 @@ def FIG_insolation_fit(gpt, output, field_data, fignum):
 
     fig_title = 'Figure '+str(fignum)+': '+field_data[0]+' '+field_data[1]+' '+field_data[2]+' '+field_data[3]
     fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(5, 5))
-    #fig.suptitle(fig_title+': Cosine of Solar Zenith Angle vs. Wavelength-averaged Panel Radiance', fontweight='bold')
     plt.tight_layout(pad=3.5, w_pad=1.0, h_pad=1.0)
 
     gpt['Solar_angle'] = gpt.apply(solang, axis=1)

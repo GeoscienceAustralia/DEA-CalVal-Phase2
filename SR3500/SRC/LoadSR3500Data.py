@@ -14,20 +14,28 @@ import glob, os, subprocess
 def action1(l):
     return l[17:-1]
 
-# Integration time
+# Temperature (350-1000 temperature)
 def action2(l):
+    return l[17:]
+
+# Battery Voltage
+def action3(l):
+    return l[17:]
+
+# Integration time
+def action4(l):
     return l[-3:-1]
 
 # Latitude
-def action3(l):
-    return l[9:-2]
+def action5(l):
+    return l
 
 # Longitude
-def action4(l):
+def action6(l):
     return l[10:-2]
 
 # Time
-def action5(l):
+def action7(l):
     return l[9:-1]
 
 #
@@ -37,10 +45,12 @@ def action5(l):
 def extract_metadata(filename):
     strings = {
         'Date': action1,
-        'Integration': action2,
-        'Latitude': action3,
-        'Longitude': action4,
-        'GPS Time': action5
+        'Temperature': action2,
+        'Voltage': action3,
+        'Integration': action4,
+        'Latitude': action5,
+        'Longitude': action6,
+        'GPS Time': action7
     }
     
     with open(filename) as file:
@@ -65,7 +75,8 @@ def load_spectrum_to_df(infile, calfile):
 
     firstDataLine = int(fdl)
 
-    date_str, int_time, lat, lon, time_str = extract_metadata(infile)
+    date_str, tempstr, voltstr, int_time, lat, lon, time_str = extract_metadata(infile)
+    
     date_time = date_str + time_str
 
     date_saved = datetime.strptime(date_str+time_str, '%m/%d/%Y %I:%M:%S %p')
@@ -87,9 +98,24 @@ def load_spectrum_to_df(infile, calfile):
 
     df['filename'] = infile.split("/")[-1:][0]
     df['date_saved'] = date_saved
-    df['IntTime'] = float(int_time)
-    df['Latitude'] = 0-float(lat)
+    try:
+        df['IntTime'] = float(int_time)
+    except ValueError:
+        df['IntTime'] = float(int_time[1:])
+    df['Latitude'] = float(lat.split(' ')[1])
     df['Longitude'] = float(lon)
+
+    temp1 = float(tempstr.split(',')[3])
+    temp2 = float(tempstr.split(',')[4])
+    temp3 = float(tempstr.split(',')[5])
+
+    df['Temp1'] = temp1
+    df['Temp2'] = temp2
+    df['Temp3'] = temp3
+
+    volt = float(voltstr.split(',')[1])
+    df['Voltage'] = volt
+
     return df
 
 #

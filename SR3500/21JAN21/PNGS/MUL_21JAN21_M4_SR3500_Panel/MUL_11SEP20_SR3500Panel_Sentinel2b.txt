@@ -1,0 +1,44 @@
+DATA SHEET FOR MUL taken on 11SEP20, SR3500Panel Sentinel2b overpass
+------------------------------------------------------------------
+
+Time of field site measurements is from 00:16:32 to 00:53:55 on the 21 January, 2021 (UTC)
+Satellite overpass was at 2021-01-09T00:02:39.024000000 (UTC)
+
+Difference in time between start of field site measurement
+and satellite overpass is -13 days +23:46:07.024000
+
+Good GPS Coordinates were found in the headers
+Approximate bounding box coordinates:
+NW: (148.888679, -35.168014)
+
+NE: (148.888985, -35.168014)
+SW: (148.888679, -35.168125)
+SE: (148.888985, -35.168125)
+Solar Zenith angle is from 30.3 to 23.6 degrees.
+
+Data were read in from /g/data/up71/projects/CalVal_Phase2/RS3500/11SEP20/RAW_DATA/RS3500/
+PNGs were written to PNGS/MUL_21JAN21_M4_SR3500_Panel/
+
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
+Data is assumed to be recorded in Radiance mode.
+
+Satellite processing and historical data can be found using the following dataset ID and location:
+[Dataset <id=1852e6d3-c057-49c4-8ff7-624a656c7fc3 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2021-01-12/S2B_OPER_MSI_ARD_TL_EPAE_20210112T013926_A020119_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=b670f4f7-d34c-47b9-bf79-bcbec8e5ada8 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2021-01-19/S2B_OPER_MSI_ARD_TL_EPAE_20210119T011957_A020219_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=90f24162-03dd-4add-a144-0a25d826cb41 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2021-01-09/S2B_OPER_MSI_ARD_TL_EPAE_20210109T011330_A020076_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=7a9377eb-abe2-487b-9dee-1708135d8d59 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2021-01-22/S2B_OPER_MSI_ARD_TL_EPAE_20210122T012405_A020262_T55HFB_N02.09/ARD-METADATA.yaml>]
+
+Summary Statistics over entire field site:
+------------------------------------------
+
+Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
+         mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
+                                         (%)     (%)            rms (%)
+CA	0.028	0.00035	0.0307	0.00468	1.25	15.2	0.91	0.73
+blue	0.0371	0.00262	0.0417	0.00595	7.05	14.3	0.891	2.29
+green	0.0625	0.00233	0.0688	0.0068	3.72	9.88	0.909	2.21
+red	0.0713	0.00532	0.0759	0.0153	7.47	20.1	0.939	2.63
+RE1	0.115	0.00145	0.117	0.0119	1.26	10.2	0.986	0.47
+RE2	0.193	0.00903	0.199	0.0352	4.67	17.7	0.972	4.25
+RE3	0.222	0.00981	0.245	0.047	4.42	19.2	0.906	3.05
+nir_1	0.249	0.016	0.267	0.0467	6.42	17.5	0.931	5.15
+nir_2	0.261	0.0105	0.28	0.0465	4.03	16.6	0.933	3.37
+swir_2	0.305	0.0106	0.316	0.0465	3.46	14.7	0.965	0.933
+swir_3	0.182	0.00692	0.185	0.0442	3.81	23.9	0.981	1.28

@@ -1,0 +1,44 @@
+DATA SHEET FOR MUL taken on 10NOV20, Flame Sentinel2b overpass
+------------------------------------------------------------------
+
+Time of field site measurements is from 02:19:15 to 02:24:19 on the 10 November, 2020 (UTC)
+Satellite overpass was at 2020-11-10T00:02:39.024000000 (UTC)
+
+Difference in time between start of field site measurement
+and satellite overpass is -1 days +21:43:23.493000
+
+Good GPS Coordinates were found in the headers
+Approximate bounding box coordinates:
+NW: (148.86264, -35.122203)
+
+NE: (148.863902, -35.122203)
+SW: (148.86264, -35.123319)
+SE: (148.863902, -35.123319)
+Solar Zenith angle is from 19.6 to 19.2 degrees.
+
+Data were read in from ../MULLION/10NOV20/flame_data/
+PNGs were written to ../PNGS/MULLION/10NOV20/
+
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
+Data is assumed to be recorded in Radiance mode.
+
+Satellite processing and historical data can be found using the following dataset ID and location:
+[Dataset <id=3d95d689-d37e-4a82-b196-9d0311a0ccae product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-13/S2B_OPER_MSI_ARD_TL_EPAE_20201113T012742_A019261_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=dd457ffa-7a0c-4fa5-af6f-f0bf801f463f product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-03/S2B_OPER_MSI_ARD_TL_EPAE_20201103T012249_A019118_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=43d8a983-cace-4ef7-98f4-c0511b770491 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-10/S2B_OPER_MSI_ARD_TL_EPAE_20201110T010941_A019218_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=bee2d230-7c25-4885-9251-fb44a50b308f product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-10-31/S2B_OPER_MSI_ARD_TL_EPAE_20201031T011306_A019075_T55HFB_N02.09/ARD-METADATA.yaml>]
+
+Summary Statistics over entire field site:
+------------------------------------------
+
+Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
+         mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
+                                         (%)     (%)            rms (%)
+CA	0.0276	0.000329	0.0568	0.00688	1.19	12.1	0.485	0.733
+blue	0.0323	0.00211	0.0415	0.00564	6.55	13.6	0.778	6.47
+green	0.0664	0.00332	0.0617	0.00478	5.01	7.74	1.08	4.56
+red	0.0426	0.00482	0.0451	0.00452	11.3	10	0.945	11.3
+RE1	0.117	0.00552	0.111	0.00831	4.72	7.47	1.05	4.46
+RE2	0.331	0.0102	0.3	0.0177	3.09	5.9	1.1	1.46
+RE3	0.426	0.0149	0.419	0.0248	3.51	5.93	1.02	1.92
+nir_1	0.47	0.0208	0.469	0.0251	4.42	5.36	1	2.59
+nir_2	0.489	0.0172	0.496	0.0241	3.52	4.86	0.985	1.96
+swir_2	0.17	0.00801	0.554	0.0214	4.71	3.86	0.307	3.65
+swir_3	0.0728	0.00345	0.534	0.0207	4.74	3.87	0.136	3.95

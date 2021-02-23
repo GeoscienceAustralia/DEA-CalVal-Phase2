@@ -1,0 +1,40 @@
+DATA SHEET FOR MUL taken on 09DEC20, 2.1mLines Landsat8 overpass
+------------------------------------------------------------------
+
+Time of field site measurements is from 00:03:35 to 00:16:13 on the 09 December, 2020 (UTC)
+Satellite overpass was at 2020-12-08T23:56:49.500000000 (UTC)
+
+Difference in time between start of field site measurement
+and satellite overpass is -1 days +23:53:14.328000
+
+Good GPS Coordinates were found in the headers
+Approximate bounding box coordinates:
+NW: (148.862657, -35.122618)
+
+NE: (148.8639, -35.122618)
+SW: (148.862657, -35.12342)
+SE: (148.8639, -35.12342)
+Solar Zenith angle is from 27.5 to 25.1 degrees.
+
+Data were read in from ../MULLION/09DEC20/RAW_DATA/Flame/lines/
+PNGs were written to ../PNGS/MULLION/09DEC20_2p1m/
+
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
+Data is assumed to be recorded in Radiance mode.
+
+Satellite processing and historical data can be found using the following dataset ID and location:
+[Dataset <id=f5afaf64-5671-452d-a958-a41b44f4afd8 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_085_20201201/ga-metadata.yaml>, Dataset <id=6fb3391e-691c-47ee-a0d6-225e8f813c25 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_084_20201201/ga-metadata.yaml>, Dataset <id=20b2091c-dc71-4fb7-ba6b-e3db97a6dcaf product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_091_084_20201208/ga-metadata.yaml>, Dataset <id=f66f3879-e427-4f57-993f-7c2123d1e0f9 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_084_20201217/ga-metadata.yaml>, Dataset <id=1f963268-d785-40d4-ac37-98885c987d91 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_085_20201217/ga-metadata.yaml>]
+
+Summary Statistics over entire field site:
+------------------------------------------
+
+Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
+         mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
+                                         (%)     (%)            rms (%)
+CA	0.098	0.00471	0.141	0.00685	4.81	4.86	0.695	2.59
+blue	0.132	0.00676	0.164	0.00991	5.12	6.06	0.807	2.75
+green	0.202	0.00965	0.198	0.0133	4.78	6.71	1.02	2.55
+red	0.28	0.0138	0.264	0.0174	4.93	6.59	1.06	2.86
+nir	0.458	0.0175	0.588	0.0252	3.82	4.29	0.779	2.41
+swir1	0.433	0.0116	0	0	2.69		inf	1.29
+swir2	0.263	0.00703	0	0	2.67		inf	1.23

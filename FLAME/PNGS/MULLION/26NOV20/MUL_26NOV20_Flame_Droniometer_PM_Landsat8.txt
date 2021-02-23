@@ -1,0 +1,40 @@
+DATA SHEET FOR MUL taken on 26NOV20, Flame_Droniometer_PM Landsat8 overpass
+------------------------------------------------------------------
+
+Time of field site measurements is from 01:22:13 to 01:31:29 on the 26 November, 2020 (UTC)
+Satellite overpass was at 2020-11-22T23:56:48.000000000 (UTC)
+
+Difference in time between start of field site measurement
+and satellite overpass is -4 days +22:34:34.515000
+
+Good GPS Coordinates were found in the headers
+Approximate bounding box coordinates:
+NW: (148.862627, -35.122251)
+
+NE: (148.863536, -35.122251)
+SW: (148.862627, -35.123058)
+SE: (148.863536, -35.123058)
+Solar Zenith angle is from 15.6 to 14.8 degrees.
+
+Data were read in from ../MULLION/26NOV20/RAW_DATA/Flame_26_11/Flame_2020_11_26_pm/
+PNGs were written to ../PNGS/MULLION/26NOV20/
+
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
+Data is assumed to be recorded in Radiance mode.
+
+Satellite processing and historical data can be found using the following dataset ID and location:
+[Dataset <id=8e9268a2-6c21-4098-987a-899036a98115 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/11/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_085_20201115/ga-metadata.yaml>, Dataset <id=f5afaf64-5671-452d-a958-a41b44f4afd8 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_085_20201201/ga-metadata.yaml>, Dataset <id=7db22f31-1452-422f-b45c-83918b1469df product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/11/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_091_084_20201122/ga-metadata.yaml>, Dataset <id=6fb3391e-691c-47ee-a0d6-225e8f813c25 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_084_20201201/ga-metadata.yaml>, Dataset <id=20b2091c-dc71-4fb7-ba6b-e3db97a6dcaf product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/12/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_091_084_20201208/ga-metadata.yaml>, Dataset <id=65b6788a-f20f-4cbf-90a8-2a04a070bd30 product=ls8_nbart_scene location=file:///g/data/rs0/scenes/nbar-scenes-tmp/ls8/2020/11/output/nbart/LS8_OLITIRS_NBART_P54_GANBART01-032_090_084_20201115/ga-metadata.yaml>]
+
+Summary Statistics over entire field site:
+------------------------------------------
+
+Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
+         mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
+                                         (%)     (%)            rms (%)
+CA	0.796	0.00397	0.0624	0.00548	0.499	8.79	12.8	0.42
+blue	0.765	0.00401	0.05	0.00714	0.524	14.3	15.3	0.447
+green	0.767	0.00394	0.0629	0.0104	0.513	16.6	12.2	0.441
+red	0.78	0.00422	0.0604	0.0132	0.541	21.8	12.9	0.457
+nir	0.819	0.00425	0.489	0.0204	0.518	4.18	1.68	0.439
+swir1	0.268	0.00284	0.645	0.0169	1.06	2.63	0.416	0.671
+swir2	0.289	0.00334	0.618	0.0163	1.15	2.64	0.468	0.686

@@ -1,0 +1,44 @@
+DATA SHEET FOR MUL taken on 11SEP20, SR3500 Sentinel2b overpass
+------------------------------------------------------------------
+
+Time of field site measurements is from 00:14:10 to 01:00:41 on the 10 November, 2020 (UTC)
+Satellite overpass was at 2020-10-31T00:02:49.024000000 (UTC)
+
+Difference in time between start of field site measurement
+and satellite overpass is -11 days +23:48:39.024000
+
+Good GPS Coordinates were found in the headers
+Approximate bounding box coordinates:
+NW: (148.8625, -35.122)
+
+NE: (148.8638, -35.122)
+SW: (148.8625, -35.1232)
+SE: (148.8638, -35.1232)
+Solar Zenith angle is from 27.6 to 20.8 degrees.
+
+Data were read in from /g/data/up71/projects/CalVal_Phase2/RS3500/11SEP20/RAW_DATA/RS3500/
+PNGs were written to PNGS/MUL_11SEP20_S2b_SR3500/
+
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
+Data is assumed to be recorded in Radiance mode.
+
+Satellite processing and historical data can be found using the following dataset ID and location:
+[Dataset <id=bee2d230-7c25-4885-9251-fb44a50b308f product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-10-31/S2B_OPER_MSI_ARD_TL_EPAE_20201031T011306_A019075_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=dd457ffa-7a0c-4fa5-af6f-f0bf801f463f product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-03/S2B_OPER_MSI_ARD_TL_EPAE_20201103T012249_A019118_T55HFB_N02.09/ARD-METADATA.yaml>]
+
+Summary Statistics over entire field site:
+------------------------------------------
+
+Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
+         mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
+                                         (%)     (%)            rms (%)
+CA	0.877	0.00129	0.0227	0.00446	0.147	19.7	38.7	0.117
+blue	0.853	0.00445	0.0312	0.00659	0.522	21.1	27.3	0.44
+green	0.833	0.00405	0.0683	0.0112	0.486	16.4	12.2	0.457
+red	0.847	0.00469	0.0431	0.0132	0.553	30.6	19.7	0.505
+RE1	0.916	0.00442	0.112	0.0204	0.482	18.3	8.19	0.411
+RE2	0.895	0.00469	0.314	0.035	0.524	11.1	2.85	0.425
+RE3	0.897	0.00409	0.427	0.0483	0.456	11.3	2.1	0.4
+nir_1	0.984	0.00522	0.46	0.0506	0.531	11	2.14	0.496
+nir_2	0.901	0.00369	0.476	0.0518	0.409	10.9	1.89	0.34
+swir_2	0.182	0.0011	0.165	0.0252	0.602	15.3	1.11	0.506
+swir_3	0.203	0.0013	0.0727	0.0122	0.64	16.8	2.79	0.547

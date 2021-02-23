@@ -13,9 +13,8 @@ import pandas as pd
 #
 def make_spec_df(in_df):
 
-    temp_loop = in_df[in_df['Wavelength'] == 450]
     out_df = pd.DataFrame()
-    for j in temp_loop['SpecNum']:
+    for j in in_df['SpecNum'].unique():
         temp2 = in_df[in_df['SpecNum']==j]
          
         if not out_df.empty:

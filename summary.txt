@@ -1,0 +1,305 @@
+SUMMARY OF WORK AND FILES
+-------------------------
+
+Andrew Walsh 10FEB21
+
+All files are on NCI under the aw3463 account and under the
+/g/data/up71/projects directory. Anyone with access to up71 should have access
+to these files.
+
+-------------------------------------------------------------------------------
+
+All Phase 1 material is located in the CalVal_Phase1 directory. This directory
+is now largely static, since we have moved on from Phase 1, but I do go back
+to this if I want to compare an ASD field campaign to L8 or S2 data in the same
+way as was done for Phase 1.
+
+The corresponding github repo for this directory is:
+https://github.com/GeoscienceAustralia/DEA-CalVal-Phase1
+
+This repo not only gives the Phase 1 Jupyter notebook workflows, but also
+instructions on how to use them.
+
+Jupyter notebooks for processing Phase 1 data are found in the "Site_Pipelines"
+directory. This directory also houses "template.ipynb", which is a template
+that can be used to create more workflows based on new ASD data. This directory
+also houses workflows related to the uncertainty experiments paper
+("*UncertaintyExperiments*") and Sen2Cor comparisons ("*Sen2Cor*").
+
+png images that are outputted by the workflows can be found in the PNGS
+directory. Similarly, output csv files can be found in the CSV directory and
+raw ASD files are found in the RAW_DATA directory. Workflows for the
+Multi-timeline analysis can be found in the MultiTimeLine directory.
+
+Source code used in the workflows is found in the SRC directory.
+
+-------------------------------------------------------------------------------
+
+All Phase 2 material is located in the CalVal_Phase2 directory.
+
+This is an area of active work and has yet to be organised as well as the Phase
+1 directory.
+
+Phase 2 is broken into two main streams: FLAME and SR3500.
+
+FLAME
+=====
+
+Top-level directories within FLAME look like:
+
+CALIBRATION - various files for FLAME calibration including usable calibration
+              files prior to JUL20 in the top level. Incorrect calibration
+              files are stored in FLAME_calibration_GA_ORIGINAL.
+
+CSV - output CSV files.
+
+MISC - RoughCAL contains rough calibration of Flame from 15JAN21.
+       image_registration contains imported source code for automatically
+       registering two images with extended features.
+
+MULLION - Contains raw data collected by the Flame at Mullion
+
+PNGS - Contains output PNG image files from workflows.
+
+SRC - Contains source code for running workflows. Most of it is a straight copy
+      from Phase 1, with main differences found in the Load*Data.py scripts.
+
+WORKFLOWS - This directory contains Jupyter notebooks, as well as output png
+            images and csv files that are yet to be properly sorted into a
+            permanent structure. At the moment, I consider all the pngs and
+            csvs to be temporary files. The notebooks are the important ones to
+            keep.
+
+SR3500
+======
+
+Top-level directories include the dates on which the SR-3500 were used, plus:
+
+Arko - Files that Arko sent for calibration comparison of SR-3500 with his 
+       SR-8800, plus files relating to the calibration of the Flame.
+
+CSV - Output csv files
+
+PNGS - Output PNG files
+
+SRC - Python source code, including Load*Data.py for both ASD and SR-3500.
+      Other source code used in SR-3500 notebooks are sources from Phase 1
+      repo. This directory also contains source code for Diffuse/Direct ASD
+      workflow, but is not used any more.
+
+temp and temp2 - Contain early workflows for dealing with SR-3500 data when we
+                 first got it in July, 2020.
+
+===============================================================================
+
+    SUMMARY BY FIELD CAMPAIGN
+    =========================
+
+Mullion 20MAR20
+---------------
+ASD and Flame data captured. Comparison between the two shows that ASD and
+Flame are tracking the same ground surface variability, but the Flame
+calibration is off.
+
+ASD data processed as for Phase 1 and shows a reasonable comparison with S2a
+overpass.
+Notebook: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-20MAR20-S2a.ipynb
+output CSVs: CalVal_Phase1/CSV/MUL_20MAR20__Landsat8.csv &  CalVal_Phase1/CSV/MUL_20MAR20__Sentinel2.csv
+output PNGs: CalVal_Phase1/PNGS/MUL-20MAR20-S2a/
+
+Sent2Cor workflow also processed, showing good match
+Notebook: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-20MAR20-S2a-Sen2Cor.ipynb
+output PNGs: CalVal_Phase1/PNGS/MUL-20MAR20-S2a-Sen2Cor/
+
+Flame notebook: CalVal_Phase2/FLAME/WORKFLOWS/20MAR20.ipynb
+Flame PNGs: CalVal_Phase2/FLAME/PNGS/MULLION/20MAR20/
+
+Mullion 14APR20
+---------------
+ASD and Flame data captured. Only 4 lines of ASD data captured, but shows a
+very good comparison with S2a overpass from 2 days prior. S2b overpass on the
+day was clouded out.
+
+ASD notebook: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-14APR20-S2a.ipynb
+ASD CSVs: CalVal_Phase1/CSV/MUL_14APR20__Landsat8.csv and 
+CalVal_Phase1/CSV/MUL_14APR20__Sentinel2.csv
+ASD PNGs: CalVal_Phase1/PNGS/MUL-14APR20-S2a/
+
+Flame data timestamp could not be determined, so the Flame data, in turn, could
+not be calibrated.
+Flame notebook: CalVal_Phase2/FLAME/WORKFLOWS/MUL-14APR20-FLAME.ipynb
+
+Mullion 17APR20
+---------------
+Only ASD data captured. Good matchup with S2b overpass.
+ASD notebook: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-17APR20-S2b.ipynb
+CSVs: CalVal_Phase1/CSV/MUL_17APR20__Landsat8.csv and
+CalVal_Phase1/CSV/MUL_17APR20__Sentinel2.csv
+PNGs: CalVal_Phase1/PNGS/MUL-17APR20-S2b
+
+Mullion 24APR20
+---------------
+ASD and Flame data captured. On this day, the gimbal pitch was set to
+horizontal, so no useful data were captured from the Flame.
+
+ASD data show a good matchup with S2b overpass.
+ASD Notebook: CalVal_Phase1/Site_Pipelines/Pipeline-24APR20-S2b.ipynb
+CSVs: CalVal_Phase1/CSV/MUL_24APR20__Landsat8.csv and
+      CalVal_Phase1/CSV/MUL_24APR20__Sentinel2.csv
+PNGs: CalVal_Phase1/PNGS/MUL-24APR20-S2b/
+
+Mullion 04MAY20
+---------------
+ASD and Flame data captured.
+ASD shows good matchup with S2b overpass. Sen2Cor data also processed.
+ASD Notebooks: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-04MAY20-S2b.ipynb and
+               ./Pipeline-MUL-04MAY20-S2b-Sen2Cor.ipynb
+CSVs: CalVal_Phase1/CSV/MUL_04MAY20__Landsat8.csv and
+      CalVal_Phase1/CSV/MUL_04MAY20__Sentinel2.csv
+PNGS: CalVal_Phase1/PNGS/MUL-04MAY20-S2b/ and ./MUL-04MAY20-S2b-Sen2Cor/
+
+Flame successfully flown on M600, with data collected over entire site, using
+10m separation between lines and data collected over about 1/3 of the site,
+using 2.1m separation between lines.
+
+Flame notebooks: CalVal_Phase2/FLAME/WORKFLOWS/MUL-04MAY20-FLAME-10mLines.ipynb 
+            and CalVal_Phase2/FLAME/WORKFLOWS/MUL-04MAY20-FLAME-2.1mLines.ipynb
+CSVs: CalVal_Phase2/FLAME/WORKFLOWS/04MAY20_10mLines_grounds.csv
+      ./04MAY20_10mLines_panels.csv
+      ./04MAY20_2.1mLines_grounds.csv
+      ./04MAY20_2.1mLines_panels.csv
+      CalVal_Phase2/FLAME/CSV/MUL_04MAY20_10mLines_Landsat8.csv
+      CalVal_Phase2/FLAME/CSV/MUL_04MAY20_10mLines_Sentinel2.csv
+      CalVal_Phase2/FLAME/CSV/MUL_04MAY20_2.1mLines_Landsat8.csv
+      CalVal_Phase2/FLAME/CSV/MUL_04MAY20_2.1mLines_Sentinel2.csv
+PNGs: CalVal_Phase2/FLAME/PNGS/MULLION/04MAY20/ (10m lines)
+      CalVal_Phase2/FLAME/PNGS/MULLION/04MAY20_2p1m/
+
+Geoscience Australia 31JUL20
+----------------------------
+SR3500 and ASD data collected. Small comparison of SR3500 and ASD done by 
+walking a line and back with both ASD and SR3500 together. Cloudy day for
+overpass, so no matchups with satellite data.
+SR3500/ASD comparison notebook: CalVal_Phase2/SR3500/31JUL20/SR3500_ASD_31JUL20.ipynb
+PNGs: CalVal_Phase2/SR3500/31JUL20/*png
+
+Timestamps could not be accurately matched up, but overall ground spectra were
+averaged to show that the radiances from two instruments are close. Any minor
+differences were attibuted to lack of timestamp matching, plus possible cloud
+interference.
+
+Mullion 11SEP20
+---------------
+SR3500, ASD and Flame data captured. Flame data only captured a few spectra
+and were not used further. SR3500 and ASD were walked over lines on the field
+and manually matched up to take into account 15 second delay in walking the
+two instruments. Small differences seen in SR3500 and ASD radiances, both on
+panel and ground.
+
+ASD on its own shows a good matchup wth S2b overpass.
+ASD notebook: CalVal_Phase2/SR3500/11SEP20/ASD_11SEP20.ipynb
+ASD PNGs: ./PNGS/MUL_11SEP20_S2b/
+
+ASD Sen2Cor workflow also processed: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-11SEP20-S2b-Sen2Cor.
+Sen2Cor looks closer to Field data with no BRDF. NBART looks closer to field with BRDF.
+
+ASD and SR3500 comparison notebook: CalVal_Phase2/SR3500/11SEP20/SR3500_ASD_11SEP20.ipynb
+output PNGs: CalVal_Phase2/SR3500/11SEP20/*png and
+             CalVal_Phase2/SR3500/11SEP20/PNGS/
+
+Mullion 10NOV20
+---------------
+SR3500 and ASD data collected. Similar method to 11SEP20 comparison. ASD is an
+excellent matchup to S2b. SR3500 and ASD are close, but similar offset as in
+11SEP20 is found.
+
+ASD notebook: CalVal_Phase2/SR3500/10NOV20/ASD_10NOV20.ipynb
+ouput PNGs: CalVal_Phase2/SR3500/10NOV20/PNGS/MUL_10NOV20_S2b/
+
+ASD Sen2Cor workflow processed and shows Sen2Cor is close to field with no BRDF.
+NBART is close to field with BRDF.
+notebook: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-10NOV20-S2b-Sen2Cor.ipynb
+output PNGS: CalVal_Phase1/PNGS/MUL-10NOV20-S2b-Sen2Cor/
+
+ASD/SR3500 comparison notebook: CalVal_Phase2/SR3500/10NOV20/SR3500_ASD_10NOV20.ipynb
+comparison PNGs: CalVal_Phase2/SR3500/10NOV20/*png and
+                 CalVal_Phase2/SR3500/10NOV20/PNGS/MUL_10NOV20_S2b_SR3500/
+
+Mullion 26NOV20
+---------------
+SR3500 and Flame data captured. SR3500 was used on the ground, but heated up
+and failed at some point. VIS spectrometer was reading temps as high as 47C
+for over 40 minutes. Battery dropped from 6.9V to 6.5V.
+
+SR3500 data could not be compared to satellite overpass, as satellite data
+were clouded out.
+
+Flame was used in two sessions (morning and afternoon) to collect the first
+droniometerm datasets. Successful droniometer polar plots were created, but 
+not yet matched to reflectance due to Flame calibration issues.
+
+Flame notebooks: CalVal_Phase2/FLAME/WORKFLOWS/MUL-26NOV20-FLAME-AM-Droniometer.ipynb
+       and CalVal_Phase2/FLAME/WORKFLOWS/MUL-26NOV20-FLAME-PM-Droniometer.ipynb
+PNGs: CalVal_Phase2/FLAME/PNGS/MULLION/26NOV20/
+
+Mullion 09DEC20
+---------------
+ASD, SR3500 and Flame data collected.
+ASD data compared to Landsat 8 (same day, clear, good match), S2a (day after,
+cloud affected, poor match) and S2b (day before, nearby cloud but not over
+field site, mediocre match) overpasses.
+ASD notebooks: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-09DEC20-L8.ipynb,
+               ./Pipeline-MUL-09DEC20-S2a.ipynb and
+               ./Pipeline-MUL-09DEC20-S2b.ipynb
+PNGs: CalVal_Phase1/PNGS/MUL-09DEC20-L8/, ./MUL-09DEC20-S2a/, ./MUL-09DEC20-S2b/
+CSVs: CalVal_Phase1/CSV/MUL_09DEC20__Landsat8.csv and 
+      ./MUL_09DEC20__Sentinel2.csv
+
+Also, Sen2Cor workflow for S2b matchup: CalVal_Phase1/Site_Pipelines/Pipeline-MUL-09DEC20-S2b-Sen2Cor.ipynb
+PNGs: CalVal_Phase1/PNGS/MUL-09DEC20-S2b-Sen2Cor/
+Sen2Cor data quite far away from NBART, field with BRDF and field witout BRDF.
+
+SR3500 data collected, but not used - all data taken with cosine diffuser.
+
+Flame data collected as 2.1m-spaced lines and as droniometer. Without Flame
+calibration available, there are significant deviations in radiance and
+reflectance.
+2.1m line workflow: CalVal_Phase2/FLAME/WORKFLOWS/MUL-09DEC20-FLAME-2.1mLines.ipynb
+2.1m line PNGs: CalVal_Phase2/FLAME/PNGS/MULLION/09DE20_2p1m/
+
+Droniometer workflow: CalVal_Phase2/FLAME/WORKFLOWS/MUL-09DEC20-FLAME-Droniometer.ipynb
+Droniometer PNGs: CalVal_Phase2/FLAME/PNGS/MULLION/09DE20_droniometer/
+
+21JAN21 - Guy's Place
+---------------------
+SR3500 and ASD data collected. The purpose of this day was to compare both
+instruments with panel and cosine diffuser methods for making reflectances.
+Workflows in directoy CalVal_Phase2/SR3500/ are:
+  * SR3500_21JAN21_M2.ipynb - Both ASD and SR3500 with cosine diffuser
+  * SR3500_21JAN21_M3.ipynb - ASD with cosine diffuser, SR3500 at panel
+  * SR3500_21JAN21_M4.ipynb - ASD with cosine diffuser, SR3500 walking lines
+  * SR3500_21JAN21_M5a.ipynb - ASD at panel, SR3500 cosine diffuser
+  * SR3500_21JAN21_M5b.ipynb - ASD walking lines, SR3500 with cosine diffuser
+  * SR3500_21JAN21_M6.ipynb - ASD at panel, SR3500 walking lines (stopped early
+                              due to clouds)
+
+Each measurement has two corresponding png files in the same directory with
+names like:
+FIG_Spectra_21JAN21_M2.png and Measurement2.png
+
+Combined.ipynb - combination of all measurements on the same time axis.
+PNG outputs from this workflow are in the same directory and start:
+MeasurementALL*png
+
+GA Lab 11FEB21
+--------------
+SR3500 data collected in the lab. SR3500 set up under battery power, pointing
+at a panel, with a standard light source shining on the panel.
+Three experiments were run and have corresponding workflows in the directory
+CalVal_Phase2/SR3500/11FEB21/WORKFLOWS/ :
+Comparison_11FEB21.ipynb, Comparison_12FEB21.ipynb, Comparison_12FEB21_A.ipynb
+Only the last one was run until the battery was drained and the SR3500 turned
+off.
+
+PNGs are found in the same directory with names like:
+FIG_Spectra_11FEB21_ALL.png, TempVolt_11FEB21.png, WavAvg_11FEB21.png

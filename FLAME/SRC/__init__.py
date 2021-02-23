@@ -2,6 +2,7 @@ from . import ApplyWeights
 from . import BRDF
 from . import CreateFieldFromSat
 from . import CreateReflectances
+from . import CreateReflectancesWithCosineDiffuser
 from . import CreateSatArrays
 from . import CreateStats
 from . import CreateSubStats
@@ -29,7 +30,9 @@ from . import FIG_SpecHistogram
 from . import FIG_SubSatFieldBands
 from . import FudgeGPS
 from . import KFactor
+from . import LoadASDData
 from . import LoadData
+from . import LoadSR3500Data
 from . import MakeSpecDF
 from . import OutlyingSpec
 from . import OutputCSVs

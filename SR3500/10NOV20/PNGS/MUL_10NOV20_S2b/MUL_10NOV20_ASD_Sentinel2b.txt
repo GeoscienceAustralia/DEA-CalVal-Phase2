@@ -1,0 +1,44 @@
+DATA SHEET FOR MUL taken on 10NOV20, ASD Sentinel2b overpass
+------------------------------------------------------------------
+
+Time of field site measurements is from 00:15:23 to 01:06:42 on the 10 November, 2020 (UTC)
+Satellite overpass was at 2020-11-10T00:02:39.024000000 (UTC)
+
+Difference in time between start of field site measurement
+and satellite overpass is -1 days +23:47:16.024000
+
+Good GPS Coordinates were found in the headers
+Approximate bounding box coordinates:
+NW: (148.862494, -35.121987)
+
+NE: (148.863815, -35.121987)
+SW: (148.862494, -35.123193)
+SE: (148.863815, -35.123193)
+Solar Zenith angle is from 27.4 to 20.2 degrees.
+
+Data were read in from /g/data/up71/projects/CalVal_Phase2/RS3500/11SEP20/RAW_DATA/ASD_DATA/
+PNGs were written to PNGS/MUL_10NOV20_S2b/
+
+Panel is assumed to be GA 10inch Panel 99aa03-0319-1952
+Data is assumed to be recorded in Radiance mode.
+
+Satellite processing and historical data can be found using the following dataset ID and location:
+[Dataset <id=dd457ffa-7a0c-4fa5-af6f-f0bf801f463f product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-03/S2B_OPER_MSI_ARD_TL_EPAE_20201103T012249_A019118_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=3d95d689-d37e-4a82-b196-9d0311a0ccae product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-13/S2B_OPER_MSI_ARD_TL_EPAE_20201113T012742_A019261_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=73316a55-80fb-4df3-a313-c6b0ce655612 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-23/S2B_OPER_MSI_ARD_TL_EPAE_20201123T012221_A019404_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=43d8a983-cace-4ef7-98f4-c0511b770491 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-10/S2B_OPER_MSI_ARD_TL_EPAE_20201110T010941_A019218_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=bdee537a-3d66-4b10-8e3d-e44afeccbcb4 product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-11-20/S2B_OPER_MSI_ARD_TL_EPAE_20201120T011737_A019361_T55HFB_N02.09/ARD-METADATA.yaml>, Dataset <id=bee2d230-7c25-4885-9251-fb44a50b308f product=s2b_ard_granule location=file:///g/data/if87/datacube/002/S2_MSI_ARD/packaged/2020-10-31/S2B_OPER_MSI_ARD_TL_EPAE_20201031T011306_A019075_T55HFB_N02.09/ARD-METADATA.yaml>]
+
+Summary Statistics over entire field site:
+------------------------------------------
+
+Band      Sat     Sat   Field    Field    Sat    Field  Sat/Fld Sat
+         mean     rms    mean     rms  rms/mean rms/mean Ratio  Pixel-by-pixel
+                                         (%)     (%)            rms (%)
+CA	0.0276	0.000329	0.0229	0.00384	1.19	16.8	1.2	0.879
+blue	0.0323	0.00211	0.032	0.00565	6.55	17.7	1.01	7.01
+green	0.0664	0.00332	0.0687	0.00927	5.01	13.5	0.967	5.06
+red	0.0426	0.00482	0.0437	0.0116	11.3	26.5	0.975	11.4
+RE1	0.117	0.00552	0.116	0.0173	4.72	14.8	1	4.73
+RE2	0.331	0.0102	0.323	0.0291	3.09	9.01	1.03	2.04
+RE3	0.426	0.0149	0.438	0.0421	3.51	9.63	0.973	2.39
+nir_1	0.47	0.0208	0.47	0.0435	4.42	9.25	0.999	3.1
+nir_2	0.489	0.0172	0.487	0.0443	3.52	9.09	1	2.42
+swir_2	0.17	0.00801	0.166	0.0203	4.71	12.2	1.02	4.36
+swir_3	0.0728	0.00345	0.0744	0.00992	4.74	13.3	0.978	4.67
