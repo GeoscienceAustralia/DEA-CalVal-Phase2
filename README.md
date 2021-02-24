@@ -10,11 +10,11 @@ Flame UV-VIS spectrometer
 </A>
 and the
 <A HREF="https://spectralevolution.com/products/hardware/field-portable-spectroradiometers-for-remote-sensing/rs-3500/">
-Spectral Evolution RS-3500
+Spectral Evolution SR-3500
 </A>
-, colloquially known as "the Speckie".<P>
+.<P>
 
-The FLAME directory includes calibration data that we independently measured by
+The FLAME directory includes calibration data that were independently measured by
 <A HREF="http://www.terraluma.net">
 Terraluma
 </A>
@@ -26,8 +26,5 @@ this repo
 </A>
 , which can be used to check the relative positioning (ie. registration) of
 drone- and satellite-based imagery. Output png files can be found in the PNG
-directory. Source code for the workflows is found in the SOURCE directory.
+directory. Source code for the workflows is found in the SRC directory.
 Flame workflows are found in the WORKFLOWS directory. <P>
-
-The Speckie directory currently contains data, workflows and output files from
-the 31st of July, 2020 field campaign.
