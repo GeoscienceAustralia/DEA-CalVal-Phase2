@@ -28,3 +28,7 @@ this repo
 drone- and satellite-based imagery. Output png files can be found in the PNG
 directory. Source code for the workflows is found in the SRC directory.
 Flame workflows are found in the WORKFLOWS directory. <P>
+
+The SR3500 directory contains the SR3500 raw data, workflows and outputs,
+sorted into field campaign days. It is likely that this will be reformatted
+once a method for phase 2 field campaigns is fully nailed down. <P>
